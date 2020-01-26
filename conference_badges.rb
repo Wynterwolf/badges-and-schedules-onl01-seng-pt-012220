@@ -22,5 +22,5 @@ def printer (attendees) #define method
     # Put on the screen the batch_badge_creator, on each one, call badge
     batch_badge_creator(attendees).each {|badge| puts badge}
     #Put on the screen, the contents of batch_badge_creator, on each one, call assign_rooms
-    batch_badge_creator(attendees).each {|rooms| puts rooms}
+   assign_rooms(attendees).each {|rooms| puts rooms}
 end
