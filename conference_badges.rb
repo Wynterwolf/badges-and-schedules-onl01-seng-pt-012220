@@ -17,3 +17,11 @@ def assign_rooms(attendees)
         "Hello, #{name}! You'll be assigned to room #{room}!" #return phrase
     end
 end
+
+def printer (attendees) #define method
+    # Put on the screen the batch_badge_creator, on each one, call badge
+    batch_badge_creator(attendees).each {|badge| puts badge}
+    #Put on the screen, the contents of batch_badge_creator, on each one, call assign_rooms
+    batch_badge_creator(attendees).each {|rooms| puts assign_rooms}
+end
+end
